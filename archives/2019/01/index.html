@@ -79,13 +79,16 @@
 
 
 
+<meta name="description" content="不会写代码的美工不是好厨子">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Yang&#39;s random talk">
+<meta property="og:title" content="L&#39;s random talk">
 <meta property="og:url" content="http://yoursite.com/archives/2019/01/index.html">
-<meta property="og:site_name" content="Yang&#39;s random talk">
+<meta property="og:site_name" content="L&#39;s random talk">
+<meta property="og:description" content="不会写代码的美工不是好厨子">
 <meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Yang&#39;s random talk">
+<meta name="twitter:title" content="L&#39;s random talk">
+<meta name="twitter:description" content="不会写代码的美工不是好厨子">
 
 
 
@@ -121,9 +124,10 @@
 
 
 
+
 <link href="https://cdn.rawgit.com/knsv/mermaid/7.0.0/dist/mermaid.css" rel="stylesheet" type="text/css">
 
-  <title>归档 | Yang's random talk</title>
+  <title>归档 | L's random talk</title>
   
 
 
@@ -153,12 +157,12 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Yang's random talk</span>
+        <span class="site-title">L's random talk</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
       
-        <p class="site-subtitle"></p>
+        <p class="site-subtitle">流水账</p>
       
   </div>
 
@@ -314,8 +318,8 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
-              <p class="site-author-name" itemprop="name">Yang Lu</p>
-              <p class="site-description motion-element" itemprop="description"></p>
+              <p class="site-author-name" itemprop="name">L</p>
+              <p class="site-description motion-element" itemprop="description">不会写代码的美工不是好厨子</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -370,7 +374,7 @@
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">Yang Lu</span>
+  <span class="author" itemprop="copyrightHolder">L</span>
 
   
 </div>
@@ -389,7 +393,24 @@
 
 
 
-<script type="text/javascript" src="https://cdn.rawgit.com/knsv/mermaid/7.0.0/dist/mermaid.min.js">
+
+  <script src="https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js"></script>
+  <script>
+    if (window.mermaid) {
+      mermaid.initialize({
+        startOnLoad:true,
+        gantt: {
+          axisFormatter: [
+            // Monday a week
+            ["%-y/%-m/%-d", function (d) {
+              return d.getDay() == 1; 
+            }]
+          ]
+        }
+      });
+    }
+  </script>
+
         
 
 
@@ -555,5 +576,5 @@
 
   
 
-</div></footer></div></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"model":{"scale":0.9,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"superSample":2,"width":120,"height":240,"position":"right","hOffset":0,"vOffset":-100},"mobile":{"show":true,"scale":0.5,"motion":true},"react":{"opacityDefault":0.7,"opacityOnHover":0.2},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 </html>
