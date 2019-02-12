@@ -235,7 +235,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/28/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/11/Hexo+Github搭建轻量级个人博客/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="L">
@@ -254,7 +254,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/01/28/hello-world/" itemprop="url">Hello World</a></h1>
+                <a class="post-title-link" href="/2019/02/11/Hexo+Github搭建轻量级个人博客/" itemprop="url">Hexo+Github搭建轻量级个人博客</a></h1>
         
 
         <div class="post-meta">
@@ -266,8 +266,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-28T15:29:07+08:00">
-                2019-01-28
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-11T14:34:03+08:00">
+                2019-02-11
               </time>
             
 
@@ -306,24 +306,28 @@
       
         
           
-            <p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html">Deployment</a></p>
-<h3 id="6-高效绘制-甘特图"><a href="#6-高效绘制-甘特图" class="headerlink" title="6. 高效绘制 甘特图"></a>6. 高效绘制 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#9-甘特图">甘特图</a></h3><pre class="mermaid">gantt
-    title A Gantt Diagram
-    dateFormat  YYYY-MM-DD
-    section Section
-    A task           :a1, 2014-01-01, 30d
-    Another task     :after a1  , 20d
-    section Another
-    Task in sec      :2014-01-12  , 12d
-    another task      : 40d</pre>
+            <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>大概CS相关专业的小伙伴/小妞伴都曾有过建个人网站的想法，不少人早已付诸实践，而我由于懒癌加上总觉得搭服务器的学习曲线会相当陡峭（<em>立个flag：希望今年能克服惰性，搭一个有后端服务的应用</em>），一直只是想想而已。</p>
+<p>节前刚好看到一个利用github pages支持静态页解析、实现本地文件发布到github pages页面的博客框架——<a href="https://hexo.io/zh-cn/">hexo</a>，算是把博客搭了起来，第一篇文章就用来回顾下踩坑的过程——<strong>事实上，用hexo搭个人博客的过程并不需要“写代码”，所以非CS专业的小伙伴也可以大胆撸起来，体验从0到1快速搭建个人博客的过程~</strong></p>
+<h2 id="用到的工具"><a href="#用到的工具" class="headerlink" title="用到的工具"></a>用到的工具</h2><h3 id="Github-amp-Github-Pages"><a href="#Github-amp-Github-Pages" class="headerlink" title="Github &amp; Github Pages"></a>Github &amp; Github Pages</h3><p><a href="https://github.com/">Github</a>是<del>全世界最大的程序猿交友网站</del>一个软件项目托管平台，而github pages是github提供给开发者用于生成项目网站的工具——简单来说，github允许我们上传代码，并基于这些代码生成可以访问的静态页面。</p>
+<p><img src="https://i.loli.net/2019/02/07/5c5c4ef82ceb8.png" alt="github pages示例"></p>
+<p><strong>不对啊，不是刚说了不需要“写代码”吗？网站的代码可以通过别的工具生成，这边是下面要介绍的hexo了↓↓↓</strong></p>
+<p>###Hexo<br><a href="https://hexo.io/zh-cn/">Hexo</a>是一个生成静态（html+css+js）网站的工具，能够把<a href="https://maxiang.io/">markdown格式</a>的文章批量转化为网站，Hexo的安装方式后面会详细介绍，我们先<strong>了解一下markdown格式↓</strong></p>
+<p>###Markdown<br>Markdown 是一种标记语言，允许我们用纯文本格式编写文档，最终显示为带有丰富格式的HTML页面，具体效果可以看图↓</p>
+<p><img src="https://i.loli.net/2019/02/08/5c5c569eb8ec0.png" alt="markdown原始文本与显示效果"></p>
+<p>Markdown语言常用语法不多，很多编辑器也支持类Word的操作模式，及原始文本与效果对照显示，这里推荐一个在线编辑器——<a href="https://www.zybuluo.com/cmd/">Cmd Markdown</a>。</p>
+<p>###Git<br>了解了前面三个工具，用hexo+github搭建及编辑个人博客的流程已经基本出来了——<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">A[开始] --&gt;|打开编辑器| B(用Markdown写文章)</span><br><span class="line">B--&gt;|输入一些命令|C(用Hexo生成静态页)</span><br><span class="line">C--&gt;|如何发布? 用Git|D(把静态页发布到Github上)</span><br><span class="line">D--&gt;E(搞定)</span><br></pre></td></tr></table></figure></p>
+<p>Git便是把我们在本地生成的静态网站发布到github的工具，它需要跟我们的Github账号进行绑定。下面开始介绍详细的搭建步骤↓</p>
+<p>##搭建步骤</p>
+<ul>
+<li>申请与配置Github账号</li>
+<li>安装Git</li>
+<li>安装Hexo</li>
+<li>编辑与发布网站</li>
+<li><code>非必须</code>绑定个人域名</li>
+<li><code>非必须</code>Hexo个性化配置</li>
+<li>111</li>
+</ul>
+
           
         
       
